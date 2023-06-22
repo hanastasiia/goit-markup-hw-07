@@ -19,9 +19,9 @@ p {
 }
 /* MEDIA */
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 428px) {
 .container {
-  max-width: 288px;
+  max-width: 396x;
 }
 }
 
