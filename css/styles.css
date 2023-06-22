@@ -18,6 +18,10 @@ p {
   margin: 0;
 }
 
+@media screen and (min-width: 480px) {
+  .section-one { display: flex;}
+}
+
 
 
 img {
@@ -54,9 +58,7 @@ header {
   display: flex;
 }
 
-@media screen and (min-width: 480px) {
-  .header-div { background-color: ;}
-}
+
 
 .header-nav {
   display: flex;
