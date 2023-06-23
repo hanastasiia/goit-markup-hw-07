@@ -151,7 +151,7 @@ a :focus {
   list-style: none;
 }
 
-.setion-one-list {
+.section-one-list {
   display: flex;
   gap: 72px;
   padding-left: 0;
@@ -880,5 +880,12 @@ fill: var(--color-cloud);
   
   @media screen and (min-width: 1158px) {
   .container {
-     max-width: 1126px;}
+     max-width: 1158px;
+    }
+    .section-one-list {
+      flex-wrap: nowrap;
+    } 
+    .section-one-list-features {
+      width: calc((100% - 72px) / 4);
+    }
   }
