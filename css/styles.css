@@ -223,12 +223,14 @@ button:focus {
 .hero-section {
   background-color: #2e2f42;
   padding: 188px 0;
-  max-width: 1440px;
+  width: 428px;
+  height: 432px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/backgrounds/people-office.jpg);
+    ) , 
+    url(../images/backgrounds/people-office.jpg) ;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -241,8 +243,12 @@ button:focus {
   line-height: 40px;
   text-align: center;
   letter-spacing: 0.02em;
+  font-weight: 700;
+font-size: 36px;
   color: #ffffff;
 }
+
+
 
 .address {
   line-height: 1.5;
@@ -299,8 +305,10 @@ button:focus {
 
 .section-three-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
   padding-left: 0;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
 .section-three-list-team {
@@ -310,6 +318,8 @@ button:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+
 .section-three-div {
   padding: 32px 16px;
 }
@@ -380,18 +390,22 @@ button:focus {
 /* Customers */
 
 .customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .customers-list {
   display: flex;
-  gap: 24px;
+  gap: 72px 16px;
+  flex-wrap: wrap;
+
+
 }
 
 .customers-item {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 16px) / 2);
   height: 88px;
+
 }
 
 .customers-link {
@@ -870,22 +884,52 @@ fill: var(--color-cloud);
   .container {
     max-width: 396px;
   }
+
+  .section-three>.container {
+    width: 264px;
+    padding: 0;
+  }
   }
   
   @media screen and (min-width: 768px) {
   .container {
      max-width: 736px;
   }
+/* Section 1 */
+  .section-one-list-features {
+      width: calc((100% - 72px) / 2);
+    }
+    .title-hthree {
+      text-align: left;
+    }
+
+  /* Section 3 */
+
+
+
   }
   
   @media screen and (min-width: 1158px) {
   .container {
      max-width: 1158px;
     }
+    /* Section 1 */
     .section-one-list {
       flex-wrap: nowrap;
     } 
     .section-one-list-features {
       width: calc((100% - 72px) / 4);
     }
+    .title-hthree {
+      text-align: left;
+    }
+
+    /* Section 3 */
+.section-three-list {
+  flex-wrap: nowrap;
+}
+.section-three-list-team {
+  width: calc((100% - 72px) / 4);
+}
+
   }
