@@ -18,11 +18,12 @@
   
   @media screen and (min-width: 768px) {
     .container {
-      max-width: 736px;}
+      max-width: 736px;
     }
 
+    /* Header Section */
     .header-nav-list {
-        display: block;
+        display: flex;
         gap: 40px;
       }
 
@@ -37,7 +38,7 @@
         color: #2e2f42;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
-      
+
       .header-list-menu:after {
         content: '';
         position: absolute;
@@ -62,18 +63,15 @@
         color: #404bbf;
       }
 
-      .list-contacts {
-        display: flex;
-        gap: 40px;
-      }
       .address {
         line-height: 1.5;
         letter-spacing: 0.002em;
         color: #434455;
         margin-left: auto;
         font-style: normal;
+        display: block;
       }
-      
+
       .info {
         font-size: 16px;
         line-height: 1.5;
@@ -82,12 +80,13 @@
         padding: 24px 0;
         display: block;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-  
+      } 
 
-.info:hover,
+    .info:hover,
 .info:focus {
   color: #404bbf;
+}
+
 
     /* Hero Section */
     .hero-section {

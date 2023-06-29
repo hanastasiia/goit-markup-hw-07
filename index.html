@@ -58,12 +58,100 @@
             </li>
           </ul>
         </address> 
-        <button type="button"> 
-        <svg> 
-          <use href="./images/icons.svg#icon-menu">
-          </use>
-        </svg>
-      </button>
+        <!-- Mobile menu -->
+        <button type="button" class="menu-open-btn"> 
+          <svg   class="menu-open-svg" width="32px"
+          height="22px"; stroke="#2E2F42" data-menu-open> 
+            <use href="./images/icons.svg#icon-menu">
+            </use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button class="menu-close-btn" type="button" data-menu-close>
+          <svg class="menu-close-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-data-modal-close"></use>
+          </svg>
+        </button>
+       <div><ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a href="./index.html" class="mob-menu-link link current"
+              >Studio</a
+            >
+          </li>
+          <li class="mob-menu-item">
+            <a href="./portfolio.html" class="mob-menu-link link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mob-menu-item">
+            <a href="" class="mob-menu-link link">Contacts</a>
+          </li>
+        </ul> 
+      </div>
+      <div> <address class="mob-menu-address">
+          <ul class="mob-list-contacts list">
+            <li>
+              <a href="tel:+110001111111" class="mob-phone-link link"
+                >+11 (000) 111-11-11
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mob-email-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+          
+          </ul>
+        </address> 
+
+        <ul class="mob-soc-list list">
+          <li class="mob-soc-item">
+            <a
+              href=""
+              class="mob-soc-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mob-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              href=""
+              class="mob-soc-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mob-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              href=""
+              class="mob-soc-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mob-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              href=""
+              class="mob-soc-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mob-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
       </div>
     </header>
 
@@ -498,7 +586,7 @@
         </div>
       </div>
     </footer> 
-
+<!-- MODAL  -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
@@ -590,5 +678,6 @@
       </div>
     </div> 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
